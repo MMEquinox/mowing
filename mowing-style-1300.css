@@ -48,7 +48,7 @@ table {
 }
 
 body {
-	background-image: url("mow-images/clouds.svg");
+	background-image: url("mowing-images/clouds.svg");
 	margin: 0;
 	padding: 0;
 	background-color: #63a9ff;
@@ -87,7 +87,7 @@ body {
 
 }
 #header h2 {
-	z-index: -1;
+	z-index: 1;
 	position: fixed;
 	left: 38.8%;
 	font-size: 4.625em; /*45 / 800 */
@@ -111,14 +111,16 @@ body {
 	margin-bottom:3%;
 	background-color: #ffc68e;
 	border: 3px solid #4a3414;
+	border-radius: 5px;
 	box-shadow: 10px 10px 5px #555555;
 	border-left: 3px solid #4a3414;
 }
 #main_nav ul li a {
+	text-decoration: none;
 	color: #4a3414;
 }
-#main_nav ul li a:hover {
-
+#main_nav ul li a:visited {
+	color: #4a3414;
 }
 #nav_list {
 	background-color: white;
@@ -154,9 +156,10 @@ body {
 
 
 #alt_nav {
-	background-color: #4a3414;
+	color: #4a3414;
+	margin-top: .5%;
+	font-weight: bold;
 	font-size: .9em; /* 20 / 800 */
-	border: 3px solid #413118;
 	text-align: center;
 }
 
@@ -165,7 +168,11 @@ body {
 }
 
 #alt_nav a {
-	padding: 1em;
+	text-decoration: none;
+	padding: 2em;
+}
+#alt_nav a:visited {
+	color: #4a3414;
 }
 
 #quote_portal {
