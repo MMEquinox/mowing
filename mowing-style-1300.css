@@ -324,3 +324,11 @@ body {
   -webkit-transform: scale(2); /* Safari and Chrome */
   -o-transform: scale(2); /* Opera */
 }
+
+#step_three_submit {
+	margin-top: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5.5em;
+}
