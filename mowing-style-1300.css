@@ -136,6 +136,12 @@ body {
 	margin-bottom: 0px;
 }
 
+#intro p a {
+	font-size: 1em;
+	text-decoration: none;
+	color: #000;
+}
+
 #main_section a{
 	text-decoration: none;
 	color: #97d571;
@@ -157,7 +163,8 @@ body {
 
 #alt_nav {
 	color: #4a3414;
-	margin-top: .5%;
+	margin-top: 5%;
+	margin-left: -9%;
 	font-weight: bold;
 	font-size: .9em; /* 20 / 800 */
 	text-align: center;
@@ -338,4 +345,71 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 5.5em;
+}
+
+#step_four {
+	background-color: #359359;
+	border: 3px solid #2f824e;
+	margin-top: 3.3%;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+}
+
+#step_four table {
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#step_four table tr td {
+	padding: .5em; 	
+}
+
+#step_four table tr td input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+#step_four_submit {
+	margin-top: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5.5em;
+}
+
+#final_price {
+	margin-top: 3.3%;
+	padding-top: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+	text-align: center;
+}
+
+#final_price table {
+	vertical-align: middle;
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#final_price table tr td {
+	padding: .2em; 	
+}
+
+#final_price_table tr td input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+#price {
+	vertical-align: middle;
+	font-size: 3em;
 }
