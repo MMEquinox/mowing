@@ -48,7 +48,7 @@ table {
 }
 
 body {
-	background-image: url("mow-images/clouds.svg");
+	background-image: url("mowing-images/clouds.svg");
 	margin: 0;
 	padding: 0;
 	background-color: #63a9ff;
@@ -60,6 +60,7 @@ body {
 #main_nav {
 	position: fixed;
 	margin-top: 2.5%;
+	top: 0;
 	left: 11.85%;
 	width: 88%;
 
@@ -88,7 +89,8 @@ body {
 }
 
 #social {
-	position: fixed; 
+	position: fixed;
+	top: 0;
 	width: 11.84%;
 }
 #social img {
@@ -141,9 +143,7 @@ body {
 }
 
 #alt_nav {
-	background-color: #4a3414;
 	font-size: .9em; /* 20 / 800 */
-	border: 3px solid #413118;
 	text-align: center;
 }
 
@@ -151,4 +151,207 @@ body {
 	padding-left: .5em;
 	padding-right: .5em;
 	display: inline;
+}
+
+#alt_nav li a {
+	text-decoration: none;
+	color: #413118;
+}
+
+#header_quote {
+	margin-top: 12%;
+	text-align: center;
+	font-size: 5em;
+	font-family: 'Passion One', cursive;
+}
+
+#step_one {
+	margin-top: 10%;
+	margin-bottom: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+}
+#step_one_div {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+#step_one a {
+	color: #4a3414;
+}
+#step_one table {
+	padding: 4em;
+}
+#step_one table td{
+	padding-left: 2em;
+}
+#step_one table tr input {
+	width: 100%;
+	max-width: 100%;
+	padding-top: .7em;
+}
+#step_one h1 {
+	text-align: center;
+	font-size: 1.6em; /* 20 / 800 */
+
+}
+#step_one_submit {
+	margin-top: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5.5em;
+}
+
+#step_two {
+	background-color: #359359;
+	border: 3px solid #2f824e;
+	margin-top: -0.48%;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+}
+
+#step_two table {
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#step_two table tr td {
+	padding: .5em; 	
+}
+
+#step_two table tr td input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+#step_two_submit {
+	margin-top: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5.5em;
+}
+
+#step_three {
+	margin-top: -0.48%;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+}
+
+#step_three_div {
+	background-color: none;
+}
+
+#step_three h3 {
+	margin-bottom: .4em;
+}
+
+#step_three h4 {
+	color: green;
+}
+
+#step_three table {
+	margin-left: auto;
+	margin-right: auto;
+}
+#step_three table tr {
+	margin-top: 0.9em;
+	display: inline-block;
+}
+#step_three table tr:nth-child(2) {
+	margin-left: 1em;
+}
+
+#step_three table tr:nth-child(3) {
+	margin-left: 1em;
+	margin-right: 2.4em;
+}
+
+#step_three table tr td input {
+	margin-left: 1.5em;
+}
+
+#step_three table tr td input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+#step_four {
+	background-color: #359359;
+	border: 3px solid #2f824e;
+	margin-top: 3.3%;
+	padding-top: 1.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+}
+
+#step_four table {
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#step_four table tr td {
+	padding: .5em; 	
+}
+
+#step_four table tr td input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+
+#step_four_submit {
+	margin-top: 3%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5.5em;
+}
+
+#final_price {
+	margin-top: 3.3%;
+	padding-top: 1.5em;
+	padding-right: 1.5em;
+	font-size: 2.5em; /* 20 / 800 */
+	font-family: 'Passion One', cursive;
+	text-align: center;
+}
+
+#final_price table {
+	vertical-align: middle;
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#final_price table tr td {
+	padding: .2em; 	
+}
+
+#final_price_table tr td input {
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+}
+#price {
+	vertical-align: middle;
+	font-size: 3em;
 }
