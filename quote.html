@@ -11,14 +11,51 @@
 		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 		<title>Quad City Mowinging Cheap</title>
+		<script>
+			var cost = 0;
+
+			var prices = {
+				sticks : 2,
+				furniture : 2,
+				debrisFree : 0,
+				dogDoo : 5,
+				other  : 2,
+				small : 25,
+				average: 28,
+				large : 35,
+				yes : 3,
+				no : 0
+			}
+
+			var activated = {
+				sticks : 0,
+				furniture : 0,
+				debrisFree : 0,
+				dogDoo : 0,
+				other : 0,
+				small : 0,
+				average : 0,
+				large : 0,
+				yes : 0,
+				no : 0
+			}
+
+			function sticks() {
+				if (activated['sticks'] == 0)
+					activated['sticks'] = 1;
+					cost = cost + prices['sticks'];
+				} if (activated['sticks'] == 1) {
+					activated['sticks'] = 0;
+					cost = cost - prices['sticks'];
+				}
+				documnet.getElementById('price').innerHTML = cost;
+		</script>
 	</head>
 	<body>
 	<nav id='main_nav'>
 		<ul>
 			<li><a href='index.html'>Home</a>
-			<li><a href='pricing.html'>Pricing</a>
-			<li><a href='contact.html'>Q&amp;A</a>
-			<li><a href='contact.html'>Contact</a>
+			<li><a href='quote.html'>Pricing</a>
 		</ul>
 	</nav>
 	<aside id='social'>
@@ -29,7 +66,6 @@
 		<header id='header_quote'>
 			<h1>Quad City Mowing</h1>
 			<h2>(309) 517-0675</h2>
-			<img src='mowing-images/grass.svg' alt='grass'>
 		</header>
 		<section id='step_one'>
 		<div id='step_one_div'>
@@ -63,19 +99,19 @@
 			<table id='pickup_table'>
 				<tr id='item_row_one'>
 					<td>Sticks:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='sticks' onclick='sticks()' type='checkbox'></td>
 					<td>Dog Poop:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='dogDoo' type='checkbox'></td>
 				</tr>
 				<tr id='item_row_two'>
 					<td>Lawn Furniture:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='furniture' type='checkbox'></td>
 					<td>Other:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='other' type='checkbox'></td>
 				</tr>
 				<tr id='item_row_three'>
 					<td>Debris Free:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='debrisFree' type='checkbox'></td>
 				</tr>
 			</table>
 		</div>
@@ -88,15 +124,15 @@
 			<table id='yard_size_table'>
 				<tr id='yard_row_one'>
 					<td>Small:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='small' type='checkbox'></td>
 				</tr>
 				<tr id='yard_row_two'>
 					<td>Average:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='average' type='checkbox'></td>
 				</tr>
 				<tr id='yard_row_three'>
 					<td>Large:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='large' type='checkbox'></td>
 				</tr>
 			</table>
 		</div>
@@ -108,9 +144,9 @@
 			<table id='step_four_table'>
 				<tr id='table_four_row_one'>
 					<td>Yes:</td>
-					<td><input type='checkbox'></td>
+					<td><input id='yes' type='checkbox'></td>
 					<td>No:</td>
-					<td><input type='checkbox'></td>					
+					<td><input id='no' type='checkbox'></td>					
 				</tr>
 			</table>
 		</div>
@@ -134,9 +170,8 @@
 		</section>
 		<nav id='alt_nav'>
 			<ul id='alt_nav_list'>
-				<li><a href=''>Contact / Make Appointment</a></li>
-				<li><a href=''>Common Questions</a></li>
-				<li><a href=''>Jobs</a></li>
+				<li><a href='index.html'>Home</a></li>
+				<li><a href='quote.html'>Quote</a></li>
 			</ul>
 		</nav>
 	</div>

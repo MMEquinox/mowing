@@ -48,37 +48,58 @@ table {
 }
 
 body {
-	background-image: url("mow-images/clouds.svg");
+	background-image: url("mowing-images/clouds.svg");
 	margin: 0;
 	padding: 0;
 	background-color: #63a9ff;
 }
 
-
-#social {
-	width: 6.0%;
-	height: 9.6039%;
+#wrapper {
+	width: 100%;
+}
+#main_nav {
 	position: fixed;
-	margin-left: 14.5%;
-	margin-top: 25%;
+	margin-top: 2.5%;
+	left: 11.85%;
+	width: 88%;
+
+}
+#main_nav ul {
+	font-size: 2em;
+	font-family: 'Passion One', cursive;
+}
+#main_nav ul li{
+	width: 24%;
+	display: inline-block;
+	text-align: center;
+	background-color: #ffc68e;
+	border: 3px solid #4a3414;
+	box-shadow: 10px 10px 5px #555555;
+	border-left: 3px solid #4a3414;
 }
 
+#main_nav li:nth-child(2) {border-left: 0px;}
+#main_nav li:nth-child(3) {border-left: 0px;}
+#main_nav li:nth-child(4) {border-left: 0px;}
+
+#main_nav ul li a {
+	color: #4a3414;
+
+}
+
+#social {
+	position: fixed; 
+	width: 11.84%;
+}
 #social img {
 	max-width: 100%;
 	max-height: 100%;
 }
-#wrapper {
-	width: 62.66%; /*800 / 1920*/
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-}
-
 #header {
+	padding-top: 11%;
 	text-align: center;
 }
-
-#header img {
+#header img{
 	width: 100%;
 }
 #header h1 {
@@ -86,88 +107,48 @@ body {
 	font-family: 'Passion One', cursive;
 
 }
-
-#main_nav ul{
-	width: 10.2083%;
-	position: fixed;
-	right: 13.445%;
-	margin-top: 25%;
-}
-
-#main_nav ul li {
-	width: 100%;
+#main_section {
+	background-color: #359359;
+	border: 3px solid #2f824e;
+	margin-top: -0.48%;
 	text-align: center;
-	font-size: 2em;/* 101.76 */
-	font-family: 'Passion One', cursive;
-	margin-top: 3%;
-	margin-bottom:3%;
-	background-color: #ffc68e;
-	border: 3px solid #4a3414;
-	box-shadow: 10px 10px 5px #555555;
-	border-left: 3px solid #4a3414;
-}
-#main_nav ul li a {
-	color: #4a3414;
-}
-#main_nav ul li a:hover {
-
-}
-#nav_list {
-	background-color: white;
-	font-size: 4.5em; /*36 / 800 */
 
 }
 
 #intro {
-	padding: 1.25em; /*10 / 800 */
-	font-size: 2em; /* 20 / 800 */
+	font-size: 2.5em;
 	font-family: 'Passion One', cursive;
+	padding: 1.25em;
 }
 
-#main_section {
-	background-color: #359359;
-	border: 3px solid #2f824e;
-	margin-top: -0.48%
-
+#quote_portal {
+	text-align: center;
+	padding: 1em;
 }
 
-#main_section article {
+#quote_portal a {
+	text-decoration: none;
+	font-size: 2.5em;
+	font-family: 'Passion One', cursive;
+	color: #97d571;
 
 }
-
+#quote_portal img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1em;
+}
 
 #alt_nav {
-	background-color: #604823;
+	background-color: #4a3414;
 	font-size: .9em; /* 20 / 800 */
 	border: 3px solid #413118;
 	text-align: center;
 }
 
-#alt_nav ul li {
+#alt_nav li {
+	padding-left: .5em;
+	padding-right: .5em;
 	display: inline;
-}
-
-#alt_nav a {
-	padding: 1em;
-}
-
-
-#quote_portal {
-	text-align: center;
-	padding: 1.25em;
-}
-
-#quote_portal img {
-	display: block;
-	background-color: #359359;
-	height: 50%;
-	width: 50%;
-	margin: auto;
-}
-
-#quote_portal a {
-	text-decoration: none;
-	color: #97d571;
-	font-size: 2.5em; /* 20 / 800 */
-	font-family: 'Passion One', cursive;
 }
